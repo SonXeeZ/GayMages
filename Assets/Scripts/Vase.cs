@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Vase : MonoBehaviour
 {
+    
     public Animator vase;
     bool szettortE = false;
 
@@ -23,6 +24,7 @@ public class Vase : MonoBehaviour
         if (currentHealth <= 0 && szettortE == false)
         {
             vaseBreak();
+            this.GetComponent<CircleCollider2D>().enabled = false;
         }
     }
 

@@ -6,7 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
     public float sebesseg = 3.0f;
     
-    public float kulcsDarab = 0;
+    public sbyte kulcsDarab = 0;
 
     public Rigidbody2D rb;
     public Camera cam;

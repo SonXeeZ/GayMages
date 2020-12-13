@@ -36,6 +36,7 @@ public class KarakterValtas : MonoBehaviour
     }
     void switchKarakter()
     {
+        PlayerMovement jatekos = FindObjectOfType<PlayerMovement>();
 
         if (Input.GetKeyDown("1") && melyikKarakter != 1)
         {
@@ -46,7 +47,7 @@ public class KarakterValtas : MonoBehaviour
             // Teleport
             jatekos1.transform.position = pozicio;
             // Sebesseg
-            
+            jatekos.sebesseg = 3.0f;
 
         }
         else if (Input.GetKeyDown("2") && melyikKarakter != 2)
@@ -58,7 +59,7 @@ public class KarakterValtas : MonoBehaviour
 
             jatekos2.transform.position = pozicio;
             // Sebesseg
-            
+            jatekos.sebesseg = 2.0f;
 
         }
         else if (Input.GetKeyDown("3") && melyikKarakter != 3)
@@ -69,8 +70,8 @@ public class KarakterValtas : MonoBehaviour
             jatekos3.gameObject.SetActive(true);
             jatekos3.transform.position = pozicio;
             // Sebesseg
-            
-            
+            jatekos.sebesseg = 2.0f;
+
         }
     }
     private int jelenlegiKarakter(int karakter)
