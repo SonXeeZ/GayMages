@@ -61,7 +61,7 @@ public class Attack : MonoBehaviour
     {
         if (attackIdo > 0f)
         {
-            attackIdo -= Time.deltaTime;
+            attackIdo -= Time.fixedDeltaTime;
             if (attackIdo <= 0f)
             {
                 attackIdo = 0f;

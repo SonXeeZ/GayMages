@@ -1,9 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
+    
+        
     public float sebesseg = 3.0f;
     
     public sbyte kulcsDarab = 0;
@@ -58,6 +61,8 @@ public class PlayerMovement : MonoBehaviour
 
         return moveSpeed;
     }
+
+    
 }
 
 
