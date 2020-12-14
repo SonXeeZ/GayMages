@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Kulcs
   - Ajto
+  - Spike
   layers:
   - Default
   - TransparentFX

@@ -8,7 +8,8 @@ public class PlayerMovement : MonoBehaviour
     
         
     public float sebesseg = 3.0f;
-    
+    public float jatekosElet = 100f;
+
     public sbyte kulcsDarab = 0;
 
     public Rigidbody2D rb;
@@ -22,6 +23,8 @@ public class PlayerMovement : MonoBehaviour
     Vector2 movement;
     Vector2 mousePos;
 
+
+    
     // Update is called once per frame
     void Update()
     {

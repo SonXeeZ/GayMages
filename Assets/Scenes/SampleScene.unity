@@ -247,6 +247,7 @@ GameObject:
   - component: {fileID: 80005822}
   - component: {fileID: 80005823}
   - component: {fileID: 80005824}
+  - component: {fileID: 80005825}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -267,6 +268,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sebesseg: 3
+  jatekosElet: 100
   kulcsDarab: 0
   rb: {fileID: 80005816}
   cam: {fileID: 519420031}
@@ -466,6 +468,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6979bacd192377a4d94807eed57c9706, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &80005825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 80005814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64311ad69ea8e5e409193e869fe7b985, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &114410858
@@ -3691,7 +3705,7 @@ GameObject:
   - component: {fileID: 1379283102}
   m_Layer: 0
   m_Name: Spike_Trap
-  m_TagString: Untagged
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4627,6 +4641,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1753474563}
+  - component: {fileID: 1753474564}
   m_Layer: 0
   m_Name: Spikes
   m_TagString: Untagged
@@ -4649,6 +4664,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1753474564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1753474562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64311ad69ea8e5e409193e869fe7b985, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1784117065 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4598296342812047507, guid: 915e5554b5d30c741a9be63efe903d28,
