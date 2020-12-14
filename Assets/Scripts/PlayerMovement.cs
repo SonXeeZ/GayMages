@@ -47,6 +47,8 @@ public class PlayerMovement : MonoBehaviour
         movement.y = Input.GetAxisRaw("Vertical");
 
         mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
+
+        Death();
     }
     private void FixedUpdate()
     {
@@ -63,6 +65,14 @@ public class PlayerMovement : MonoBehaviour
         rb.rotation = angle;
 
         return moveSpeed;
+    }
+
+    void Death()
+    {
+        if(jatekosElet <= 0)
+        {
+            SceneManager.LoadScene("Dungeon");
+        }
     }
 
     

@@ -8,7 +8,7 @@ public class SpikeDamage : MonoBehaviour
 
 
     private float szamlalo = 0.0f;
-    private float animGyakorisag = 60.0f;
+    private float animGyakorisag = 100.0f;
 
     private void FixedUpdate()
     {
@@ -33,7 +33,7 @@ public class SpikeDamage : MonoBehaviour
         PlayerMovement jatekos = FindObjectOfType<PlayerMovement>();
         if (szamlalo % animGyakorisag == 0.0f)
         {
-            jatekos.jatekosElet -= 100;
+            jatekos.jatekosElet -= 10;
             szamlalo = 0.0f;
             Debug.Log("-100 élet!");
         }
