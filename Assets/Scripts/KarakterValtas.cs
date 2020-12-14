@@ -5,7 +5,7 @@ using UnityEngine;
 public class KarakterValtas : MonoBehaviour
 {
     public GameObject jatekos1, jatekos2, jatekos3;
-    sbyte melyikKarakter;
+    public sbyte melyikKarakter;
     Vector3 pozicio;
 
     void Start()

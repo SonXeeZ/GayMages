@@ -33,7 +33,9 @@ public class Attack : MonoBehaviour
     
     void Update()
     {
-        if (Input.GetMouseButtonDown(0) && attackIdo == 0f)
+        KarakterValtas karakter = FindObjectOfType<KarakterValtas>();
+
+        if (Input.GetMouseButtonDown(0) && attackIdo == 0f && karakter.melyikKarakter == 3)
         {
             Tamadas();
             attackIdo += 1.0f;

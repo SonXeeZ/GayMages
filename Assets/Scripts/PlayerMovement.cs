@@ -10,7 +10,7 @@ public class PlayerMovement : MonoBehaviour
     public float sebesseg = 3.0f;
     public float jatekosElet = 100f;
 
-    public sbyte kulcsDarab = 0;
+    public sbyte kulcsKek, kulcsZold, kulcsLila;
 
     public Rigidbody2D rb;
     public Camera cam;
@@ -24,7 +24,12 @@ public class PlayerMovement : MonoBehaviour
     Vector2 mousePos;
 
 
-    
+    private void Start()
+    {
+        kulcsKek = 0;
+        kulcsZold = 0;
+        kulcsLila = 0;
+    }
     // Update is called once per frame
     void Update()
     {

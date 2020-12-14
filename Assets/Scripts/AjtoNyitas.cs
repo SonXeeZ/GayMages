@@ -9,9 +9,20 @@ public class AjtoNyitas : MonoBehaviour
     {
         PlayerMovement jatekos = FindObjectOfType<PlayerMovement>();
 
-        if (collision.gameObject.tag == "Ajto" && jatekos.kulcsDarab == 1)
+        if (collision.gameObject.tag == "ajtoKek" && jatekos.kulcsKek == 1)
         {
             Destroy(collision.gameObject);
+            Debug.Log("Ajtó nyitva.");
+        }
+        if (collision.gameObject.tag == "ajtoZold" && jatekos.kulcsZold == 1)
+        {
+            Destroy(collision.gameObject);
+            Debug.Log("Ajtó nyitva.");
+        }
+        if (collision.gameObject.tag == "ajtoLila" && jatekos.kulcsLila == 1)
+        {
+            Destroy(collision.gameObject);
+            Debug.Log("Ajtó nyitva.");
         }
     }
 }

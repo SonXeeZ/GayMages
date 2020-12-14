@@ -4,9 +4,16 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Kulcs
-  - Ajto
   - Spike
+  - Undefined
+  - kulcsKek
+  - kulcsZold
+  - ajtoKek
+  - ajtoZold
+  - ajtoLila
+  - kulcsLila
+  - toxicMezo
+  - HP
   layers:
   - Default
   - TransparentFX
