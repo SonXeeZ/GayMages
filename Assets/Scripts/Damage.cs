@@ -55,6 +55,10 @@ public class Damage : MonoBehaviour
             }
 
         }
+        if (collision.gameObject.tag == "toxicMezo")
+        {
+            jatekos.sebesseg = 1.0f;
+        }
         /*
         if (collision.gameObject.tag == "toxicMezo")
         {

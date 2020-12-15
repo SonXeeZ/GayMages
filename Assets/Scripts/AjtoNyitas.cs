@@ -11,16 +11,19 @@ public class AjtoNyitas : MonoBehaviour
 
         if (collision.gameObject.tag == "ajtoKek" && jatekos.kulcsKek == 1)
         {
+            jatekos.kulcsKek = 0;
             Destroy(collision.gameObject);
             Debug.Log("Ajtó nyitva.");
         }
         if (collision.gameObject.tag == "ajtoZold" && jatekos.kulcsZold == 1)
         {
+            jatekos.kulcsZold = 0;
             Destroy(collision.gameObject);
             Debug.Log("Ajtó nyitva.");
         }
         if (collision.gameObject.tag == "ajtoLila" && jatekos.kulcsLila == 1)
         {
+            jatekos.kulcsLila = 0;
             Destroy(collision.gameObject);
             Debug.Log("Ajtó nyitva.");
         }

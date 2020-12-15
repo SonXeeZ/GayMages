@@ -30,6 +30,19 @@ public class Kulcs_UI : MonoBehaviour
         {
             kulcs3.enabled = true;
         }
+
+        if (jatekos.kulcsKek == 0)
+        {
+            kulcs1.enabled = false;
+        }
+        if (jatekos.kulcsZold == 0)
+        {
+            kulcs2.enabled = false;
+        }
+        if (jatekos.kulcsLila == 0)
+        {
+            kulcs3.enabled = false;
+        }
     }
 
 }
