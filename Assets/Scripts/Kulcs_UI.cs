@@ -8,7 +8,7 @@ public class Kulcs_UI : MonoBehaviour
     
     public Image kulcs1,kulcs2,kulcs3;
 
-    private void Awake()
+    private void Start()
     {
         kulcs1.enabled = false;
         kulcs2.enabled = false;

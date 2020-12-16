@@ -14,7 +14,7 @@ public class KarakterValtas : MonoBehaviour
         jatekos1.gameObject.SetActive(true);
         jatekos2.gameObject.SetActive(false);
         jatekos3.gameObject.SetActive(false);
-        jelenlegiKarakter(1);
+        //jelenlegiKarakter(1);
     }
 
     void Update()
@@ -74,7 +74,7 @@ public class KarakterValtas : MonoBehaviour
 
         }
     }
-    private int jelenlegiKarakter(int karakter)
+    /*private int jelenlegiKarakter(int karakter)
     {
         if (Input.GetKeyDown("1")){
             karakter = 1;
@@ -86,7 +86,7 @@ public class KarakterValtas : MonoBehaviour
             karakter = 3;
         }
         return karakter;
-    }   
+    }   */
 
    
 }
